@@ -1,8 +1,10 @@
 body {
-    background-color: #463333;
+    background-color: #161945;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 5%;
+    padding: 1%;
+    font-family:noto-serif-uniquifier;
+    
 }
 
 
@@ -60,8 +62,8 @@ body {
 
 .box1 {
     width: 200px;
-    height: 200px;
-    background-color: #595d87;
+    height: auto;
+    background-color: #56597a;
     margin: 10px;
     padding: 20px;
     text-align: left;
@@ -69,6 +71,7 @@ body {
     flex-grow: 10;
     display: flex;
     flex-wrap: wrap;
+    
 
 }
 
@@ -135,6 +138,7 @@ body {
 img {
 
    display: block;
+   box-shadow: 2px 2px #100d25
 }
 
 
@@ -143,5 +147,46 @@ tr > td {
 
 }
 
+tr td:first-child {
+    font-weight: bold;
+}
+
 p:first-word{font-weight:bold;}
 
+
+
+@media screen and (max-width: 600px) {
+    .main_containter {
+        flex-direction: column;
+    }
+
+    .box6 {
+       display: none;
+    }
+    .box7 {
+        display: inline;
+    }
+
+    img {
+       display: none;
+    }
+
+}
+
+
+
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:  400;
+  font-style: bold;
+}
+
+.noto-serif-uniquifier {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
